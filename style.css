@@ -159,3 +159,47 @@ section h4{
 	margin: 0;
 }
 
+@media (max-width: 800px){	
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.profile{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		height: 100%;
+	}
+	
+	.profile div{
+		grid-column: span 3;
+		display: grid;
+		grid-template-columns: 1fr 2fr; 
+		padding: 3%;
+		align-items: center;
+	}
+	
+	.profile img{
+		grid-row: span 2;
+		width: 60%;
+		object-fit: cover;
+		margin-left: 20%;
+	}
+	
+	.profile a{
+		text-align: center;
+	}
+	
+	.profile h2{
+		font-size: 40px;
+	}
+	
+	section{
+		margin-bottom: 5%;
+	}
+	
+	.work, .play, .study, .exercise, .social, .selfcare{
+		height: 250px;
+	}
+}
